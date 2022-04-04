@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background: #E5E5E5;
+    display: flex;
+}
+
+.sidebar {
+    background: #fff;
+    min-width: 200px;
+    width: 25%;
+}
+.nav-bar {
+    display: flex;
+    width:75%;
+    background: #fff;
+    height: 60px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.links ul {
+
+}
+.links ul li {
+
+}

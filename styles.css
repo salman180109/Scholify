@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
 
 * {
     margin: 0;
@@ -11,12 +12,13 @@
 body {
     background: #E5E5E5;
     display: flex;
+    justify-content: space-between;
 }
 
 .sidebar {
     background: #fff;
     min-width: 200px;
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,11 +27,11 @@ body {
 }
 .nav-bar {
     display: flex;
-    width:75%;
+    width: 79.9%;
     background: #fff;
     height: 96.63px;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0 20px;
     align-items: center;
 }
 .part:nth-child(2) {
@@ -71,7 +73,9 @@ body {
     padding: 7px 16px;
     border-radius: 2px;
 }
-
+.part .link1 i {
+    padding-left: 10px;
+}
 .part .link2 {
     font-weight: 500;
     font-size: 14px;
@@ -93,7 +97,7 @@ body {
 
 
 .input-section .label {
-    font-family: 'poppins';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;

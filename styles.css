@@ -25,6 +25,18 @@ body {
     align-items: center;
 
 }
+
+.side-logo {
+    width: 100%;
+    border: 1px solid black;
+    padding-left: 5%;
+}
+.side-logo img {
+    width: 80%;
+    border: 1px solid black;
+}
+
+
 .nav-bar {
     display: flex;
     width: 79.9%;

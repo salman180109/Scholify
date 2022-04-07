@@ -208,4 +208,13 @@ body {
     width: 73%;
     height: 400px;
     padding: 10px;
+    position: relative;
+}
+select option {
+    font-family: 'Poppins' !important;
+    background: #0094F5;
+    transition: 0.2s;
+}
+select option:hover {
+    background: white;
 }

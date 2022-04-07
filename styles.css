@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 999;
 }
 
 .sidebar {
@@ -32,6 +33,26 @@ body {
 
 }
 
+
+.banner-container {
+    width: 100%;
+    aspect-ratio: 4.08;
+    background: #474747;
+    position: relative;
+    margin-bottom: 10px;
+}
+.banner-container:nth-child(1) .bannerImage {
+    background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./pics/banner.png);
+}
+.banner-container:nth-child(2) .bannerImage {
+    background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./banner2.png);
+}
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+}
+
 .side-logo {
     width: 100%;
     padding-left: 5%;
@@ -39,6 +60,11 @@ body {
 }
 .side-logo img {
     width: 80%;
+}
+.side-form {
+    position: relative;
+    width: 80%;
+    margin-bottom: 10px;
 }
 
 
@@ -50,6 +76,7 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
+    z-index: 999 !important;
 }
 .part:nth-child(2) {
     display: flex;
@@ -112,7 +139,9 @@ body {
 
 
 
-
+.input-section {
+    padding: 10px 0;
+}
 .input-section .label {
     font-family: 'Roboto';
     font-style: normal;
@@ -121,7 +150,7 @@ body {
     line-height: 183%;
     text-transform: uppercase;
     color: #7B7B7B;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 
@@ -129,10 +158,11 @@ body {
     width: 27%;
     height: 300px;
     float: right !important;
-    padding: 5px;
+    padding-right: 10px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .sideCard {
@@ -210,9 +240,13 @@ body {
     padding: 10px;
     position: relative;
 }
-select option {
+select {
     font-family: 'Poppins' !important;
-    background: #0094F5;
+    background: #ffffff;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
     transition: 0.2s;
 }
 select option:hover {

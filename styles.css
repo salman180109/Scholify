@@ -34,24 +34,7 @@ body {
 }
 
 
-.banner-container {
-    width: 100%;
-    aspect-ratio: 4.08;
-    background: #474747;
-    position: relative;
-    margin-bottom: 10px;
-}
-.banner-container:nth-child(1) .bannerImage {
-    background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./pics/banner.png);
-}
-.banner-container:nth-child(2) .bannerImage {
-    background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./banner2.png);
-}
-.bannerImage {
-    width: 100%;
-    height: 100%;
-    background-size: cover !important;
-}
+
 
 .side-logo {
     width: 100%;
@@ -236,9 +219,11 @@ body {
 }
 .mid-container {
     width: 73%;
-    height: 400px;
     padding: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 select {
     font-family: 'Poppins' !important;
@@ -251,4 +236,63 @@ select {
 }
 select option:hover {
     background: white;
+}
+
+.banner-container {
+    width: 100%;
+    aspect-ratio: 4;
+    position: relative;
+    width: 100%;
+}
+.bi1 {
+    background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./pics/banner.png);
+}
+.bi2 {
+    background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./banner2.png);
+}
+.bannerImage {
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+}
+.longCard {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.longCard .title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    color: #1D1E20;
+    padding: 5px 0;
+}
+.longCard .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.longCard .items .item {
+    width: 24%;
+}
+.item .image {
+    aspect-ratio: 1.88;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.item .image img {
+    width: 100%;
+}
+.item .des {
+    font-size: 1vw;
+    padding: 4px 0;
+}
+.longCard div .button {
+    padding: 5px 15px;
+    border-radius: 3px;
+    background: white;
+    border: 1px solid black;
 }

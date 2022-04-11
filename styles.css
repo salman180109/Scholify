@@ -10,22 +10,24 @@
 
 body {
     background: #E5E5E5;
+    overflow-x: hidden;
 }
 
 .fixed-components {
     top: 0;
     position: fixed;
-    width: 100%;
+    width: 15%;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     z-index: 999;
+    background: #ffffff;
 }
 
 .sidebar {
     background: #fff;
-    min-width: 200px;
-    width: 20%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -46,16 +48,19 @@ body {
 }
 .side-form {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin-bottom: 10px;
 }
 
 
 .nav-bar {
+    position: fixed;
+    right: 0;
+    top: 0;
     display: flex;
-    width: 79.9%;
+    width: calc(85% - 1px);
     background: #fff;
-    height: 96.63px;
+    height: 80px;
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
@@ -64,7 +69,7 @@ body {
 @media (max-width:1008px){
     .nav-bar {
         flex-direction: column;
-        width: calc(100% - 201px);
+        height: 80px;
     }
 }
 
@@ -146,7 +151,7 @@ body {
 
 
 .side-container {
-    width: 27%;
+    width: 25%;
     height: 300px;
     float: right !important;
     padding-right: 10px;
@@ -220,13 +225,14 @@ body {
 
 
 .main-container {
-    width: 80%;
-    height: 1200px;
+    position: relative;
+    width: 85%;
+    height: auto;
     margin: 0 20%;
-    margin-top: 96.63px;
+    margin-top: 80px;
 }
 .mid-container {
-    width: 73%;
+    width: 75%;
     padding: 10px;
     position: relative;
     display: flex;
@@ -262,6 +268,7 @@ select option:hover {
     background-size: cover !important;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .bannerImage .title {

@@ -64,6 +64,7 @@ body {
 @media (max-width:1008px){
     .nav-bar {
         flex-direction: column;
+        width: calc(100% - 201px);
     }
 }
 
@@ -262,6 +263,11 @@ select option:hover {
     width: 100%;
     height: 100%;
 }
+
+.bannerImage .title {
+    color: #fff;
+}
+
 .longCard {
     background: white;
     display: flex;
@@ -302,4 +308,72 @@ select option:hover {
     border-radius: 3px;
     background: white;
     border: 1px solid black;
+}
+
+
+
+
+/*INFOS*//*INFOS*//*INFOS*//*INFOS*//*INFOS*//*INFOS*/
+.infos {
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 5px;
+}
+.infos .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.infos .info .icon {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+}
+.infos .info .basic {
+    display: flex;
+    flex-direction: column;
+}
+.infos .info .icon i {
+    color: white;
+}
+.infos .info .basic h1 {
+    font-size: 2vw;
+}
+.infos .info .basic p {
+    font-size: 1vw;
+}
+.split {
+    width: 1px;
+    height: inherit;
+    background: #B1B1B166;
+}
+/*INFOS*/
+
+
+
+
+
+
+
+
+.bgPurple {
+    background: #8490FF;
+}
+.bgOrange {
+    background: #FFBF84;
+}
+.bgPink {
+    background: #BA84FF;
+}
+.bgLime {
+    background: #9FD69E;
 }

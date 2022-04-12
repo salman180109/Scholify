@@ -18,8 +18,9 @@ body {
     position: fixed;
     background: #fff;
     width: 15%;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: center;
     left: 0;
@@ -39,7 +40,7 @@ body {
 }
 .side-form {
     position: relative;
-    width: 90%;
+    width: 85%;
     margin-bottom: 10px;
 }
 
@@ -92,19 +93,19 @@ body {
     color: #0094F5 !important;
 }
 
-.part .link1 {
+.link1 {
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
 }
-.part .link1 a {
+.link1 a {
     background: #053680;
     text-decoration: none;
     color: #fff;
     padding: 7px 16px;
     border-radius: 2px;
 }
-.part .link1 i {
+.link1 i {
     padding-left: 10px;
 }
 .part .link2 {
@@ -304,7 +305,6 @@ select option:hover {
 
 
 
-
 .longCard {
     background: white;
     display: flex;
@@ -399,7 +399,71 @@ select option:hover {
 
 
 
+/*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
 
+.footer {
+    position: relative;
+    background: #ffffff;
+    padding: 30px;
+    width: 100%;
+    bottom: 0;
+    float: inline-end;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer .part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer .part:nth-child(1) {
+    flex-direction: column;
+}
+.footer .part:nth-child(2) {
+    flex-direction: row;
+}
+.footer .part:nth-child(3) {
+    
+}
+
+.part ul {
+    list-style: none;
+}
+.part ul li a {
+    text-decoration: none;
+    color: #1D1E20;
+}
+.part ul li a:hover {
+    color: #3AA2F8;
+}
+
+
+.part .title {
+    font-size: 18px;
+}
+.searchBox .searchForm.foot input {
+    padding: 5px;
+    height: 40px;
+    width: 250px;
+    font-size: 12px;
+}
+.searchBox .searchForm.foot button {
+    padding: 0 20px;
+    height: 40px;
+    cursor: pointer;
+    background: #3AA2F8;
+    border: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: white;
+}
+
+
+
+/*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
 
 
 
@@ -410,9 +474,18 @@ select option:hover {
 .bgOrange {
     background: #FFBF84;
 }
-.bgPink {
+.bgViolet {
     background: #BA84FF;
 }
 .bgLime {
     background: #9FD69E;
+}
+.bgPink {
+    background: #FF84A1;
+}
+.bgYellow {
+    background: #DED580;
+}
+.bgSecondary {
+    background: #3F95E1 !important;
 }

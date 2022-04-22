@@ -463,6 +463,12 @@ select option:hover {
 .footer .part:nth-child(2) {
     flex-direction: row;
 }
+.updown {
+    flex-direction: column;
+    gap: 5px !important;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+}
 
 
 .part ul {
@@ -479,6 +485,20 @@ select option:hover {
 
 .part .title {
     font-size: 18px;
+}
+.part h3 {
+    font-size: 16px;
+}
+.links {
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+}
+.links ion-icon {
+    cursor: pointer;
+}
+.links ion-icon:hover {
+    color: rgb(49, 136, 207);
 }
 .searchBox .searchForm.foot input {
     padding: 5px;

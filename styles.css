@@ -323,6 +323,7 @@ select option:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .longCard .items .item {
     width: 24%;
@@ -346,7 +347,7 @@ select option:hover {
     padding: 5px 15px;
     border-radius: 3px;
     background: white;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.253);
 }
 
 
@@ -397,6 +398,42 @@ select option:hover {
 }
 /*INFOS*/
 
+.mainCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 24%;
+    padding: 10px 0;
+}
+.cardHead {
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 2px 5px;
+}
+.cardMid {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+}
+.cardFoot {
+    display: flex;
+    font-size: 10px;
+    gap:5px;
+    justify-content: space-between;
+}
+.cardFoot span {
+    white-space: nowrap;
+    background: #E9EAEE;
+    padding: 1px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px;
+}
 
 
 
@@ -415,4 +452,13 @@ select option:hover {
 }
 .bgLime {
     background: #9FD69E;
+}
+.bgYellow {
+    background: #FFE76D;
+}
+.bgSky {
+    background: #92DEFF;
+}
+.bgLimeGreen {
+    background: #C7FF9A;
 }

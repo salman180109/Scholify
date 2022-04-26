@@ -57,6 +57,7 @@ body {
     padding: 0 20px;
     align-items: center;
     z-index: 999 !important;
+    box-shadow: 2px 3px 4px #0000005c;
 }
 @media (max-width:1008px){
     .nav-bar {

@@ -17,7 +17,7 @@ body {
 .sidebar {
     position: fixed;
     background: #fff;
-    width: 15%;
+    width: 13%;
     min-height: 100vh;
     display: flex;
     justify-content: start;
@@ -50,7 +50,7 @@ body {
     right: 0;
     top: 0;
     display: flex;
-    width: calc(85% - 1px);
+    width: calc(100% - 13% - 1px);
     background: #fff;
     height: 80px;
     justify-content: space-between;
@@ -129,7 +129,7 @@ body {
 
 
 .input-section {
-    padding: 10px 0;
+    padding: 3px 0;
 }
 .input-section .label {
     font-family: 'Roboto';
@@ -144,7 +144,7 @@ body {
 
 
 .side-container {
-    width: 25%;
+    width: 23%;
     height: 300px;
     float: right !important;
     padding-right: 10px;
@@ -220,12 +220,12 @@ body {
 .main-container {
     float: right !important;
     position: relative;
-    width: 85%;
+    width: 87%;
     height: auto;
     margin-top: 80px;
 }
 .mid-container {
-    width: 75%;
+    width: 77%;
     padding: 10px;
     position: relative;
     display: flex;
@@ -605,4 +605,20 @@ select option:hover {
 }
 .bgSecondary {
     background: #3F95E1 !important;
+}
+
+
+
+.longCard, .infos, .banner-container, .sideCard {
+    box-shadow: 1px 2px 3px #0000003b;
+}
+
+
+
+.sideCard.whatsApp {
+    padding: 0;
+    width: 100%;
+    aspect-ratio: 2.5;
+    background: url(./pics/wa.png);
+    background-size: cover;
 }

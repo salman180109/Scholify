@@ -177,6 +177,8 @@ body {
 .subCard {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 5px;
 }
 .subCard .image {
     width: 70px;
@@ -236,12 +238,12 @@ select {
     font-family: 'Poppins' !important;
     background: #ffffff;
     width: 100%;
-    padding: 10px;
-    border: 1px solid black;
+    padding: 4px 0;
+    border: 1px solid rgba(97, 97, 97, 0.336);
     border-radius: 2px;
     transition: 0.2s;
 }
-select option:hover {
+option:hover {
     background: white;
 }
 

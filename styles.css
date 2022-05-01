@@ -617,10 +617,13 @@ option:hover {
 
 
 
-.sideCard.whatsApp {
-    padding: 0;
+.sideCard img {
     width: 100%;
-    aspect-ratio: 2.5;
-    background: url(./pics/wa.png);
-    background-size: cover;
+    height: 100%;
+}
+
+
+.m0p0 {
+    padding: 0 !important;
+    margin: 0 !important;
 }

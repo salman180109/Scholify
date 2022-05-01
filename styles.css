@@ -449,6 +449,33 @@ option:hover {
     height: inherit;
     background: #B1B1B166;
 }
+
+.info2 > .icon {
+    background-size: 50% !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.info2:nth-child(1) .icon {
+    background: url(./pics/icon1.png), #FFBF84;
+}
+.info2:nth-child(2) .icon {
+    background: url(./pics/icon2.png), #3F95E1;
+}
+.info2:nth-child(3) .icon {
+    background: url(./pics/icon3.png), #BA84FF;
+}
+.info2:nth-child(4) .icon {
+    background: url(./pics/icon4.png), #9FD69E;
+}
+.info2:nth-child(5) .icon {
+    background: url(./pics/icon5.png), #DED580;
+}
+.info2:nth-child(6) .icon {
+    background: url(./pics/icon6.png), #FF84A1;
+}
+
+
 /*INFOS*/
 
 .mainCard {

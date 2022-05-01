@@ -501,13 +501,16 @@ option:hover {
 .cardFoot {
     display: flex;
     font-size: 10px;
-    gap:5px;
+    gap:2px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .cardFoot span {
     white-space: nowrap;
+    display: block;
+    width: max-content;
     background: #E9EAEE;
-    padding: 1px;
+    padding: 0 2px;
     border-radius: 2px;
     display: flex;
     justify-content: space-around;

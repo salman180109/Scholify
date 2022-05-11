@@ -25,6 +25,8 @@ body {
     align-items: center;
     left: 0;
     top: 0;
+    border-right: 1px solid #DCE5EA;
+    ;
 }
 
 
@@ -52,12 +54,12 @@ body {
     display: flex;
     width: calc(100% - 13% - 1px);
     background: #fff;
-    height: 80px;
+    height: 120px;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 30px;
     align-items: center;
     z-index: 999 !important;
-    box-shadow: 2px 3px 4px #0000005c;
+    box-shadow: inset 0px -1px 0px #DCE5EA;
 }
 @media (max-width:1008px){
     .nav-bar {
@@ -67,8 +69,11 @@ body {
 }
 
 
-.part:nth-child(2) {
+.part2 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 18px;
 }
 .links ul {
@@ -100,11 +105,14 @@ body {
     line-height: 24px;
 }
 .link1 a {
-    background: #053680;
+    background: #3AA2F8;
     text-decoration: none;
     color: #fff;
-    padding: 7px 16px;
+    padding: 8px 20px;
     border-radius: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
 }
 .link1 i {
     padding-left: 10px;
@@ -129,7 +137,7 @@ body {
 
 
 .input-section {
-    padding: 3px 0;
+    padding: 0px 20px;
 }
 .input-section .label {
     font-family: 'Roboto';
@@ -147,11 +155,11 @@ body {
     width: 23%;
     height: 300px;
     float: right !important;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding-right: 30px;
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 
 .sideCard {
@@ -224,20 +232,21 @@ body {
     position: relative;
     width: 87%;
     height: auto;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 .mid-container {
     width: 77%;
-    padding: 10px;
+    padding: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 select {
     font-family: 'Poppins' !important;
     background: #ffffff;
     width: 100%;
+    height: 38px;
     padding: 4px 0;
     border: 1px solid rgba(97, 97, 97, 0.336);
     border-radius: 2px;
@@ -249,35 +258,44 @@ option:hover {
 
 .banner-container {
     width: 100%;
-    aspect-ratio: 4;
     position: relative;
     width: 100%;
 }
 .bi1 {
+    aspect-ratio: 3.123;
     background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./pics/banner.png);
 }
-.bi2 {
-    background: linear-gradient(90.27deg, #053680 35.3%, rgba(5, 54, 128, 0) 99.22%), url(./banner2.png);
-}
+
 .bannerImage {
     background-size: cover !important;
     width: 100%;
-    height: 100%;
     position: relative;
-    padding: 30px;
+    padding: 60px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+}
+.bi2 {
+    background: linear-gradient(89.89deg, #03487E 0.07%, #1166A8 99.9%);
+    border-radius: 2px;
+    height: 139px !important;
+    padding: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .bannerImage .title {
     color: #fff;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 40px;
     line-height: 140%;
     
+}
+.btns {
+    display: flex;
+    gap: 20px;
 }
 .searchBox .searchForm {
     display: flex;
@@ -285,16 +303,17 @@ option:hover {
 }
 .searchBox .searchForm input
 {
-    padding: 5px;
-    height: 40px;
+    padding: 15px;
+    height: 55px;
     width: 350px;
     font-size: 12px;
+    border: 1px solid #DCE5EA;
 }
 .searchBox .searchForm button {
     padding: 0 20px;
-    height: 40px;
+    height: 55px;
     cursor: pointer;
-    background: #3AA2F8;
+    background: #053680;
     border: none;
     font-weight: 400;
     font-size: 13px;
@@ -303,7 +322,12 @@ option:hover {
 }
 
 
-
+.bannerImage .title2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
 
 
 
@@ -313,7 +337,7 @@ option:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 10px;
+    padding: 25px;
 }
 .longCard .title {
     font-weight: 500;
@@ -343,7 +367,7 @@ option:hover {
     width: 100%;
 }
 .item .des {
-    font-size: 1vw;
+    font-size: 16px;
     padding: 4px 0;
 }
 .longCard div .button {
@@ -374,7 +398,7 @@ option:hover {
 
 
 .infos .info .icon {
-    width: 50px;
+    width: 67px;
     aspect-ratio: 1;
     border-radius: 50px;
     display: grid;
@@ -386,12 +410,15 @@ option:hover {
 }
 .infos .info .icon i {
     color: white;
+    font-size: 25px;
 }
 .infos .info .basic h1 {
-    font-size: 2vw;
+    font-size: 32px;
 }
 .infos .info .basic p {
-    font-size: 1vw;
+    font-size: 18px;
+    color: #757575;
+font-weight: 600;
 }
 .split {
     width: 1px;
@@ -490,6 +517,8 @@ option:hover {
     border-radius: 3px;
     font-size: 14px;
     padding: 2px 5px;
+    color: #1D1E20;
+
 }
 .cardMid {
     background: #fff;
@@ -497,20 +526,22 @@ option:hover {
     border-radius: 4px;
     padding: 5px;
     font-size: 14px;
+    color: #474747;
+
 }
 .cardFoot {
     display: flex;
     font-size: 10px;
-    gap:2px;
+    gap:5px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .cardFoot span {
     white-space: nowrap;
     display: block;
     width: max-content;
     background: #E9EAEE;
-    padding: 0 2px;
+    padding: 2px 4px;
     border-radius: 2px;
     display: flex;
     justify-content: space-around;
@@ -524,7 +555,8 @@ option:hover {
 
 .footer {
     position: relative;
-    background: #ffffff;
+    background: #053680;
+    color: white;
     padding: 30px;
     width: 100%;
     bottom: 0;
@@ -533,6 +565,9 @@ option:hover {
     justify-content: center;
     gap: 50px;
     box-shadow: 1px 3px 4px grey;
+}
+.footer * {
+    color: white;
 }
 
 .footer .part {
@@ -559,7 +594,6 @@ option:hover {
 }
 .part ul li a {
     text-decoration: none;
-    color: #1D1E20;
 }
 .part ul li a:hover {
     color: #3AA2F8;
@@ -574,11 +608,30 @@ option:hover {
 }
 .links {
     display: flex;
-    font-size: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #474747;
     gap: 20px;
+}
+.rounded a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #474747;
+    padding: 8px 15px;
+    border: 1px solid #DCE5EA;
+}
+.profile {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 40px;
+    background: #3AA2F8;
 }
 .links ion-icon {
     cursor: pointer;
+    font-size: 20px;
 }
 .links ion-icon:hover {
     color: rgb(49, 136, 207);
@@ -633,10 +686,11 @@ option:hover {
     background: #FF84A1;
 }
 .bgYellow {
-    background: #DED580;
+    background: #FFE76D;
 }
 .bgSecondary {
     background: #3F95E1 !important;
+    padding: 15px 20px !important;
 }
 
 
@@ -656,4 +710,16 @@ option:hover {
 .m0p0 {
     padding: 0 !important;
     margin: 0 !important;
+}
+
+
+
+.sub-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
 }

@@ -105,7 +105,7 @@ body {
     line-height: 24px;
 }
 .link1 a {
-    background: #3AA2F8;
+    background: #053680;
     text-decoration: none;
     color: #fff;
     padding: 8px 20px;
@@ -156,7 +156,7 @@ body {
     height: 300px;
     float: right !important;
     padding-right: 30px;
-    padding-top: 0px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -259,7 +259,8 @@ option:hover {
 .banner-container {
     width: 100%;
     position: relative;
-    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
 }
 .bi1 {
     aspect-ratio: 3.123;
@@ -338,6 +339,7 @@ option:hover {
     flex-direction: column;
     gap: 5px;
     padding: 25px;
+    border-radius: 2px;
 }
 .longCard .title {
     font-weight: 500;
@@ -387,6 +389,7 @@ option:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 30px 5px;
+    border-radius: 2px;
 }
 .infos .info {
     display: flex;
@@ -695,12 +698,6 @@ font-weight: 600;
 
 
 
-.longCard, .infos, .banner-container, .sideCard {
-    box-shadow: 1px 2px 3px #0000003b;
-}
-
-
-
 .sideCard img {
     width: 100%;
     height: 100%;
@@ -722,4 +719,16 @@ font-weight: 600;
     letter-spacing: 0.2em;
 
     color: #FFFFFF;
+}
+
+.modSearch input {
+    background: #F2F3F6;
+    border: 1px solid #DCE5EA;
+    border-radius: 2px;
+}
+
+
+.modSearch input::placeholder {
+    font-size: 14px;
+    background: #F2F3F6;
 }

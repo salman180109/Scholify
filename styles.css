@@ -55,7 +55,7 @@ body {
     display: flex;
     width: calc(100% - 13% - 1px);
     background: #fff;
-    height: 120px;
+    height: 88px;
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
@@ -171,7 +171,10 @@ body {
 }
 
 .cardTitle {
+    font-weight: 600;
+    /*Figma 
     font-weight: 500;
+    */
     font-size: 18px;
     line-height: 150%;
     color: #474747;
@@ -339,7 +342,7 @@ option:hover {
     background: white;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     padding: 25px;
     border-radius: 2px;
 }
@@ -555,7 +558,7 @@ option:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
@@ -629,8 +632,34 @@ option:hover {
     font-size: 14px;
     line-height: 24px;
     color: #474747;
-    padding: 8px 15px;
+    padding: 8px 40px;
     border: 1px solid #DCE5EA;
+
+    position: relative;
+}
+.rounded a::before {
+    content: '';
+    height: 12px;
+    aspect-ratio: 1;
+    background: green;
+    position: absolute;
+    left: 15px;
+    border-radius: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.rounded a::after {
+    content: '';
+    height: 13px;
+    width: 15px;
+    background: url(./pics/comment-lines.png);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    right: 15px;
+    border-radius: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .profile {
     width: 40px;

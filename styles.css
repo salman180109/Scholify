@@ -635,8 +635,20 @@ option:hover {
     color: #474747;
     padding: 8px 40px;
     border: 1px solid #DCE5EA;
-
     position: relative;
+}
+.link2 a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #474747;
+    padding: 8px 20px;
+    border: 1px solid #DCE5EA;
+    position: relative;
+}
+.rounded a {
+    padding: 8px 40px !important;
 }
 .rounded a::before {
     content: '';

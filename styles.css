@@ -38,11 +38,12 @@ body {
     padding-top: 15px;
 }
 .side-logo img {
-    width: 80%;
+    width: 90%;
 }
 .side-form {
     position: relative;
     width: 85%;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -148,6 +149,7 @@ body {
     text-transform: uppercase;
     color: #7B7B7B;
     padding: 10px 0;
+    letter-spacing: 1px;
 }
 
 
@@ -184,9 +186,9 @@ body {
 }
 .subCard {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 .subCard .image {
     width: 70px;
@@ -342,7 +344,10 @@ option:hover {
     border-radius: 2px;
 }
 .longCard .title {
+    font-weight: 600;
+    /*Figma 
     font-weight: 500;
+    */
     font-size: 22px;
     line-height: 140%;
     color: #1D1E20;
@@ -388,7 +393,7 @@ option:hover {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 30px 5px;
+    padding: 40px 50px;
     border-radius: 2px;
 }
 .infos .info {
@@ -396,7 +401,7 @@ option:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 
@@ -421,7 +426,8 @@ option:hover {
 .infos .info .basic p {
     font-size: 18px;
     color: #757575;
-font-weight: 600;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .split {
     width: 1px;

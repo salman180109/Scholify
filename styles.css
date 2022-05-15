@@ -237,7 +237,7 @@ body {
     position: relative;
     width: 87%;
     height: auto;
-    margin-top: 120px;
+    margin-top: 88px;
 }
 .mid-container {
     width: 77%;
@@ -370,7 +370,7 @@ option:hover {
     width: 100%;
     overflow: hidden;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 2px;
     overflow: hidden;
 }
 .item .image img {
@@ -466,6 +466,7 @@ option:hover {
 .infos2 .info2 .basic {
     display: flex;
     flex-direction: column;
+    max-width: 120px;
 }
 .infos2 .info2 .icon i {
     color: white;
@@ -766,4 +767,45 @@ option:hover {
 .modSearch input::placeholder {
     font-size: 14px;
     background: #F2F3F6;
+}
+
+
+div.email {
+    position: relative;
+    padding-left: 20px;
+}
+div.email::after {
+    content: '';
+    height: 10px;
+    width: 12px;
+    background: url(./pics/envelope.png);
+    position: absolute;
+    left: 0;
+}
+a.email {
+    text-decoration: none;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    color: #0094F5 !important;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 10px !important;
+    position: relative;
+}
+.input-section::after {
+    content: '';
+    height: 8px;
+    aspect-ratio: 1;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    position: absolute;
+    font-size: 17px;
+    font-family: 'poppins';
+    font-weight: 100;
+    right: 30px;
+    transform: translateY(10px) rotate(-45deg);
 }

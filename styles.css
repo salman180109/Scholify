@@ -654,7 +654,7 @@ option:hover {
     content: '';
     height: 12px;
     aspect-ratio: 1;
-    background: green;
+    background: #1EC54A;
     position: absolute;
     left: 15px;
     border-radius: 20px;

@@ -568,8 +568,8 @@ option:hover {
 
 .footer {
     position: relative;
-    background: #053680;
-    color: white;
+    background: #ffffff;
+    color: #1D1E20;
     padding: 30px;
     width: 100%;
     bottom: 0;
@@ -580,12 +580,11 @@ option:hover {
     box-shadow: 1px 3px 4px grey;
 }
 .footer * {
-    color: white;
+    color:#1D1E20;;
 }
 
 .footer .part {
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 .footer .part:nth-child(1) {
